@@ -243,7 +243,7 @@ module.exports = {
 
     // custom
     "jest/max-nested-describe": [
-      "warn",
+      "error",
       {
         "max": 4
       },

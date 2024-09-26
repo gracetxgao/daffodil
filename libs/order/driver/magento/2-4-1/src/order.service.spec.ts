@@ -25,6 +25,12 @@ import {
 import { MagentoOrderTestDataFactory } from './helpers/public_api';
 import { DaffOrderMagentoService } from './order.service';
 
+interface GetTestState {
+  wasMagentoCallSuccessful: boolean;
+  didResponsePassValidation: boolean;
+  wasOrderFound: boolean;
+}
+
 describe('@daffodil/order/driver/magento/2-4-1 | DaffOrderMagentoService', () => {
   let service: DaffOrderMagentoService;
   let controller: ApolloTestingController;
